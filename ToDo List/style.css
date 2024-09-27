@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #2b2d42, #3a3d5c);
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.todo-header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #d4af37; /* Emas */
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    width: 75%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+#task-input:focus {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.btn {
+    width: 20%;
+    padding: 15px;
+    background-color: #d4af37; /* Emas */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b08b2d; /* Emas gelap */
+}
+
+.todo-list {
+    list-style-type: none;
+}
+
+.todo-list li {
+    background-color: #f9fafb;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-list li:hover {
+    background-color: #e0e1dd;
+    transform: scale(1.02);
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff4757;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+    background-color: #ecf0f1;
+    box-shadow: none;
+}
